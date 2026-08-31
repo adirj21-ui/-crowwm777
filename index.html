@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>CROWWM 777 | Premium Experience</title>
+<title>CROWWM 777 | Luxury Games</title>
 
 <style>
 
@@ -18,721 +18,971 @@ html{scroll-behavior:smooth}
 
 body{
 
-  margin:0;
+margin:0;
 
-  background:#030303;
+background:#030303;
 
-  color:#fff;
+color:#fff;
 
-  font-family:Arial,sans-serif;
+font-family:Arial,sans-serif;
 
-  overflow-x:hidden;
+overflow-x:hidden;
 
 }
 
 body:before{
 
-  content:"";
+content:"";
 
-  position:fixed;
+position:fixed;
 
-  inset:0;
+inset:0;
 
-  pointer-events:none;
+pointer-events:none;
 
-  background:
+background:
 
-    radial-gradient(circle at 20% 10%,rgba(212,164,55,.08),transparent 25%),
+radial-gradient(circle at 15% 15%,rgba(240,190,70,.10),transparent 25%),
 
-    radial-gradient(circle at 80% 40%,rgba(212,164,55,.06),transparent 30%);
+radial-gradient(circle at 85% 45%,rgba(240,190,70,.08),transparent 30%);
 
-  z-index:-1;
+z-index:-1;
 
 }
 
 nav{
 
-  position:sticky;
+position:sticky;
 
-  top:0;
+top:0;
 
-  z-index:20;
+z-index:100;
 
-  min-height:78px;
+min-height:76px;
 
-  background:rgba(4,4,4,.92);
+padding:10px 6%;
 
-  backdrop-filter:blur(15px);
+display:flex;
 
-  border-bottom:1px solid rgba(225,180,70,.35);
+align-items:center;
 
-  display:flex;
+justify-content:space-between;
 
-  align-items:center;
+background:rgba(3,3,3,.92);
 
-  justify-content:space-between;
+backdrop-filter:blur(16px);
 
-  padding:10px 7%;
+border-bottom:1px solid rgba(222,174,61,.35);
 
 }
 
 .logo{
 
-  font:900 27px Georgia,serif;
+font:900 27px Georgia,serif;
 
-  color:#f7d477;
+color:#f5d16d;
 
-  text-align:center;
+text-align:center;
 
-  letter-spacing:1px;
-
-  text-shadow:0 0 18px rgba(247,212,119,.2);
+text-shadow:0 0 25px rgba(245,209,109,.15);
 
 }
 
 .logo span{
 
-  display:block;
+display:block;
 
-  color:#fff;
+font-size:17px;
 
-  font-size:19px;
+letter-spacing:8px;
 
-  letter-spacing:7px;
+color:#fff;
 
 }
 
 .links{
 
-  display:flex;
+display:flex;
 
-  gap:8px;
-
-}
-
-nav a{
-
-  color:#ddd;
-
-  text-decoration:none;
-
-  padding:10px 13px;
-
-  border-radius:8px;
-
-  font-weight:bold;
-
-  transition:.25s;
+gap:4px;
 
 }
 
-nav a:hover{
+.links a{
 
-  color:#f7d477;
+color:#ddd;
 
-  background:rgba(247,212,119,.07);
+text-decoration:none;
+
+font-weight:bold;
+
+padding:10px 13px;
+
+border-radius:9px;
+
+transition:.25s;
+
+}
+
+.links a:hover{
+
+background:rgba(245,209,109,.07);
+
+color:#f5d16d;
 
 }
 
 .btn{
 
-  padding:14px 25px;
+display:inline-block;
 
-  border-radius:10px;
+border:1px solid #c69a32;
 
-  border:1px solid #d9aa3c;
+border-radius:10px;
 
-  background:transparent;
+padding:14px 24px;
 
-  color:#fff;
+background:transparent;
 
-  font-weight:bold;
+color:#fff;
 
-  cursor:pointer;
+font-weight:bold;
 
-  transition:.25s;
+cursor:pointer;
+
+text-decoration:none;
+
+transition:.25s;
 
 }
 
 .btn:hover{
 
-  transform:translateY(-2px);
+transform:translateY(-3px);
 
-  box-shadow:0 8px 30px rgba(211,164,55,.18);
+box-shadow:0 12px 35px rgba(220,170,50,.14);
 
 }
 
 .gold{
 
-  background:linear-gradient(135deg,#ffe9a0,#d5a22e,#ffe18a);
+border:0;
 
-  color:#080808;
+color:#090909;
 
-  border:0;
+background:linear-gradient(135deg,#fff0a8,#d3a136,#ffe58d);
 
 }
 
 .hero{
 
-  min-height:650px;
+min-height:680px;
 
-  padding:80px 8%;
+padding:85px 8%;
 
-  display:grid;
+display:grid;
 
-  grid-template-columns:1.05fr .95fr;
+grid-template-columns:1.05fr .95fr;
 
-  align-items:center;
+align-items:center;
 
-  gap:50px;
+gap:50px;
 
-  background:
+background:
 
-    radial-gradient(circle at 75% 50%,rgba(150,104,15,.27),transparent 30%),
+radial-gradient(circle at 75% 50%,rgba(143,101,18,.30),transparent 32%),
 
-    linear-gradient(180deg,#050505,#080704 55%,#030303);
-
-  position:relative;
-
-}
-
-.hero:after{
-
-  content:"";
-
-  position:absolute;
-
-  left:0;
-
-  right:0;
-
-  bottom:0;
-
-  height:1px;
-
-  background:linear-gradient(90deg,transparent,#d4a43b,transparent);
+linear-gradient(180deg,#050505,#090704 60%,#030303);
 
 }
 
 .badge{
 
-  display:inline-block;
+display:inline-block;
 
-  padding:8px 15px;
+border:1px solid rgba(242,202,102,.5);
 
-  border:1px solid rgba(241,198,92,.45);
+background:rgba(242,202,102,.05);
 
-  border-radius:30px;
+color:#f3ce6c;
 
-  color:#f5cf70;
+border-radius:30px;
 
-  background:rgba(241,198,92,.06);
+padding:9px 17px;
 
-  margin-bottom:20px;
+font-size:12px;
 
-  font-size:13px;
-
-  letter-spacing:1px;
+letter-spacing:3px;
 
 }
 
 h1{
 
-  font:900 clamp(60px,9vw,105px) Georgia,serif;
+font:900 clamp(62px,9vw,110px) Georgia,serif;
 
-  color:#f6d274;
+line-height:.82;
 
-  line-height:.82;
+margin:25px 0;
 
-  margin:0;
+color:#f5d06c;
 
-  text-shadow:0 0 35px rgba(230,178,55,.12);
+text-shadow:0 0 35px rgba(245,208,108,.13);
 
 }
 
 h1 span{
 
-  display:block;
+display:block;
 
-  color:#fff;
+font-size:.55em;
 
-  font-size:.62em;
+letter-spacing:13px;
 
-  letter-spacing:10px;
+color:#fff;
 
-  margin-top:12px;
+margin-top:15px;
 
 }
 
 .hero p{
 
-  max-width:650px;
+max-width:620px;
 
-  font-size:20px;
+color:#aaa;
 
-  color:#bdbdbd;
+font-size:20px;
 
-  line-height:1.7;
-
-  margin:28px 0;
+line-height:1.75;
 
 }
 
 .actions{
 
-  display:flex;
+display:flex;
 
-  gap:12px;
+gap:12px;
 
-  flex-wrap:wrap;
+flex-wrap:wrap;
 
-}
-
-.art{
-
-  height:430px;
-
-  border:1px solid rgba(221,174,61,.5);
-
-  border-radius:30px;
-
-  background:
-
-    radial-gradient(circle,#241b08 0%,#0b0905 45%,#030303 75%);
-
-  display:grid;
-
-  place-items:center;
-
-  box-shadow:
-
-    0 0 80px rgba(205,151,33,.08),
-
-    inset 0 0 70px rgba(0,0,0,.7);
-
-  position:relative;
-
-  overflow:hidden;
+margin-top:28px;
 
 }
 
-.art:before,
+.hero-card{
 
-.art:after{
+height:440px;
 
-  content:"";
+border-radius:32px;
 
-  position:absolute;
+border:1px solid rgba(219,171,54,.55);
 
-  border:1px solid rgba(240,193,76,.15);
+background:
 
-  border-radius:50%;
+radial-gradient(circle at center,#2b2008,transparent 50%),
+
+linear-gradient(145deg,#151109,#030303);
+
+display:grid;
+
+place-items:center;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:
+
+0 0 80px rgba(205,153,36,.08),
+
+inset 0 0 70px rgba(0,0,0,.75);
 
 }
 
-.art:before{width:330px;height:330px}
+.hero-card:before,
 
-.art:after{width:245px;height:245px}
+.hero-card:after{
 
-.sevens{
+content:"";
 
-  position:relative;
+position:absolute;
 
-  z-index:2;
+border:1px solid rgba(245,209,109,.15);
 
-  font:900 92px Georgia,serif;
+border-radius:50%;
 
-  color:#f2c65b;
+}
 
-  letter-spacing:8px;
+.hero-card:before{
 
-  text-shadow:0 0 30px rgba(240,181,50,.35);
+width:360px;
+
+height:360px;
+
+}
+
+.hero-card:after{
+
+width:270px;
+
+height:270px;
+
+}
+
+.hero-seven{
+
+position:relative;
+
+z-index:2;
+
+font:900 95px Georgia,serif;
+
+letter-spacing:9px;
+
+color:#f4ce68;
+
+text-shadow:0 0 35px rgba(239,185,48,.35);
 
 }
 
 section{
 
-  padding:80px 7%;
+padding:85px 7%;
 
 }
 
-.section-label{
+.label{
 
-  text-align:center;
+text-align:center;
 
-  color:#b08a37;
+font-size:12px;
 
-  text-transform:uppercase;
+letter-spacing:4px;
 
-  letter-spacing:4px;
-
-  font-size:12px;
+color:#b98c32;
 
 }
 
 h2{
 
-  text-align:center;
+font:800 42px Georgia,serif;
 
-  color:#f5d171;
+color:#f4d071;
 
-  font:800 42px Georgia,serif;
+text-align:center;
 
-  margin:10px 0 42px;
+margin:10px 0 45px;
 
 }
 
 .grid{
 
-  display:grid;
+display:grid;
 
-  grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(4,1fr);
 
-  gap:18px;
-
-}
-
-.card{
-
-  padding:30px 22px;
-
-  border:1px solid #392b11;
-
-  border-radius:20px;
-
-  background:
-
-    linear-gradient(145deg,rgba(28,23,12,.95),rgba(7,7,7,.98));
-
-  text-align:center;
-
-  min-height:215px;
-
-  transition:.3s;
-
-  position:relative;
-
-  overflow:hidden;
+gap:18px;
 
 }
 
-.card:before{
+.game-card{
 
-  content:"";
+min-height:230px;
 
-  position:absolute;
+padding:30px 20px;
 
-  top:0;
+text-align:center;
 
-  left:15%;
+border:1px solid #3d2d0e;
 
-  right:15%;
+border-radius:22px;
 
-  height:1px;
+background:
 
-  background:linear-gradient(90deg,transparent,#e0b64e,transparent);
+linear-gradient(145deg,#17130b,#060606);
 
-}
+cursor:pointer;
 
-.card:hover{
+transition:.3s;
 
-  transform:translateY(-6px);
+position:relative;
 
-  border-color:#a87d24;
-
-  box-shadow:0 18px 50px rgba(0,0,0,.45);
+overflow:hidden;
 
 }
 
-.icon{
+.game-card:before{
 
-  font-size:53px;
+content:"";
 
-  margin-bottom:8px;
+position:absolute;
 
-}
+top:0;
 
-.card h3{
+left:15%;
 
-  font-size:23px;
+right:15%;
 
-  margin:8px 0;
+height:1px;
 
-}
-
-.card p{
-
-  color:#999;
-
-  line-height:1.6;
+background:linear-gradient(90deg,transparent,#e2b84f,transparent);
 
 }
 
-.offer{
+.game-card:hover{
 
-  max-width:1050px;
+transform:translateY(-8px);
 
-  margin:auto;
+border-color:#ae8126;
 
-  border:1px solid #b98927;
-
-  border-radius:25px;
-
-  padding:45px;
-
-  text-align:center;
-
-  background:
-
-    radial-gradient(circle at center,rgba(172,124,25,.13),transparent 55%),
-
-    #090806;
-
-  box-shadow:0 0 70px rgba(191,142,37,.06);
+box-shadow:0 20px 60px rgba(0,0,0,.5);
 
 }
 
-.offer strong{
+.game-icon{
 
-  display:block;
+font-size:58px;
 
-  font:900 42px Georgia,serif;
-
-  color:#f5d06e;
-
-  margin-bottom:12px;
+margin-bottom:8px;
 
 }
 
-.offer p{
+.game-card h3{
 
-  color:#aaa;
+font-size:24px;
 
-  font-size:18px;
-
-  line-height:1.6;
+margin:8px;
 
 }
+
+.game-card p{
+
+color:#999;
+
+line-height:1.55;
+
+}
+
+.game{
+
+display:none;
+
+max-width:1050px;
+
+margin:30px auto 0;
+
+padding:30px;
+
+border:1px solid #806020;
+
+border-radius:25px;
+
+background:#080704;
+
+box-shadow:0 0 70px rgba(205,155,42,.07);
+
+}
+
+.game.active{display:block}
+
+.game-title{
+
+text-align:center;
+
+color:#f4d071;
+
+font:800 32px Georgia,serif;
+
+margin-bottom:25px;
+
+}
+
+.table{
+
+background:radial-gradient(circle,#17452b,#051b12 75%);
+
+border:8px solid #664a18;
+
+border-radius:42px;
+
+padding:35px;
+
+min-height:360px;
+
+box-shadow:inset 0 0 70px #000;
+
+}
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin:18px;
+
+min-height:90px;
+
+}
+
+.playing-card{
+
+width:62px;
+
+height:88px;
+
+border-radius:10px;
+
+background:#f4f0e7;
+
+color:#111;
+
+display:grid;
+
+place-items:center;
+
+font:bold 24px Georgia,serif;
+
+box-shadow:0 5px 14px #000;
+
+}
+
+.hidden-card{
+
+background:linear-gradient(135deg,#701717,#170505);
+
+color:#e9c867;
+
+border:2px solid #d2a53e;
+
+}
+
+.status{
+
+text-align:center;
+
+color:#ddd;
+
+min-height:28px;
+
+line-height:1.5;
+
+}
+
+.demo-coins{
+
+text-align:center;
+
+color:#f1cc68;
+
+font-weight:bold;
+
+margin:15px;
+
+}
+
+.controls{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin-top:20px;
+
+}
+
+/* Blackjack */
+
+.bj-area{
+
+text-align:center;
+
+padding:10px;
+
+}
+
+.score{
+
+font-size:19px;
+
+color:#f3cd69;
+
+}
+
+.bj-hand{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+min-height:100px;
+
+margin:12px;
+
+}
+
+/* Roulette */
+
+.roulette-wheel{
+
+width:250px;
+
+height:250px;
+
+margin:25px auto;
+
+border-radius:50%;
+
+border:12px solid #d1a43e;
+
+display:grid;
+
+place-items:center;
+
+background:
+
+conic-gradient(
+
+#9c1717 0 10deg,#111 10deg 20deg,
+
+#eee 20deg 30deg,#9c1717 30deg 40deg,
+
+#111 40deg 50deg,#eee 50deg 60deg,
+
+#9c1717 60deg 70deg,#111 70deg 80deg,
+
+#eee 80deg 90deg,#9c1717 90deg 100deg,
+
+#111 100deg 110deg,#eee 110deg 120deg,
+
+#9c1717 120deg 130deg,#111 130deg 140deg,
+
+#eee 140deg 150deg,#9c1717 150deg 160deg,
+
+#111 160deg 170deg,#eee 170deg 180deg,
+
+#9c1717 180deg 190deg,#111 190deg 200deg,
+
+#eee 200deg 210deg,#9c1717 210deg 220deg,
+
+#111 220deg 230deg,#eee 230deg 240deg,
+
+#9c1717 240deg 250deg,#111 250deg 260deg,
+
+#eee 260deg 270deg,#9c1717 270deg 280deg,
+
+#111 280deg 290deg,#eee 290deg 300deg,
+
+#9c1717 300deg 310deg,#111 310deg 320deg,
+
+#eee 320deg 330deg,#9c1717 330deg 340deg,
+
+#111 340deg 350deg,#eee 350deg 360deg);
+
+transition:transform 2.2s cubic-bezier(.1,.7,.1,1);
+
+}
+
+.roulette-center{
+
+width:78px;
+
+height:78px;
+
+border-radius:50%;
+
+background:#080808;
+
+border:3px solid #d5aa45;
+
+display:grid;
+
+place-items:center;
+
+color:#f5d170;
+
+font-size:25px;
+
+}
+
+/* Slots */
+
+.slots{
+
+display:flex;
+
+justify-content:center;
+
+gap:12px;
+
+margin:30px 0;
+
+}
+
+.slot{
+
+width:95px;
+
+height:110px;
+
+border-radius:14px;
+
+background:#eee;
+
+color:#111;
+
+display:grid;
+
+place-items:center;
+
+font-size:50px;
+
+box-shadow:inset 0 0 18px #555,0 5px 15px #000;
+
+}
+
+/* Sports */
 
 .sports{
 
-  display:grid;
+max-width:1000px;
 
-  gap:14px;
+margin:auto;
 
-  max-width:1000px;
+display:grid;
 
-  margin:auto;
+gap:13px;
 
 }
 
 .match{
 
-  display:grid;
+display:grid;
 
-  grid-template-columns:1fr auto 1fr;
+grid-template-columns:1fr auto 1fr;
 
-  align-items:center;
+align-items:center;
 
-  gap:15px;
+gap:15px;
 
-  padding:20px;
+padding:20px;
 
-  background:linear-gradient(100deg,#0c0c0c,#17130a,#0c0c0c);
+border:1px solid #392b0f;
 
-  border:1px solid #33270e;
+border-radius:17px;
 
-  border-radius:16px;
-
-}
-
-.team{
-
-  font-weight:bold;
-
-  font-size:17px;
+background:linear-gradient(100deg,#090909,#151109,#090909);
 
 }
 
-.team:first-child{text-align:right}
+.team{font-weight:bold;font-size:17px}
 
 .team:last-child{text-align:left}
 
+.team:first-child{text-align:right}
+
 .odds{
 
-  display:flex;
+display:flex;
 
-  gap:8px;
+gap:8px;
 
 }
 
 .odd{
 
-  border:1px solid #72551b;
+padding:10px 13px;
 
-  border-radius:8px;
+border:1px solid #72551b;
 
-  padding:9px 13px;
+border-radius:8px;
 
-  color:#f4cf6a;
+background:#070604;
 
-  background:#0a0906;
+color:#f3cd69;
 
-  font-weight:bold;
+font-weight:bold;
 
 }
 
 .demo{
 
-  text-align:center;
+text-align:center;
 
-  color:#777;
+color:#666;
 
-  font-size:12px;
+font-size:12px;
 
-  margin-top:18px;
-
-}
-
-.vip{
-
-  max-width:1050px;
-
-  margin:auto;
-
-  border:1px solid #b98b2a;
-
-  border-radius:27px;
-
-  padding:55px;
-
-  text-align:center;
-
-  background:
-
-    radial-gradient(circle at 50% 0,rgba(219,172,62,.15),transparent 45%),
-
-    linear-gradient(145deg,#171207,#050505);
+margin-top:18px;
 
 }
 
-.vip p{
+/* Offer */
 
-  color:#aaa;
+.offer,.vip{
 
-  font-size:18px;
+max-width:1050px;
 
-  margin-bottom:25px;
+margin:auto;
+
+padding:50px;
+
+text-align:center;
+
+border:1px solid #a97922;
+
+border-radius:27px;
+
+background:
+
+radial-gradient(circle at center,rgba(205,156,38,.13),transparent 55%),
+
+#080705;
 
 }
+
+.offer strong{
+
+display:block;
+
+font:900 44px Georgia,serif;
+
+color:#f5d071;
+
+margin:10px 0;
+
+}
+
+.offer p,.vip p{
+
+color:#aaa;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+/* Contact */
 
 .contact{
 
-  text-align:center;
+text-align:center;
 
 }
 
 .whatsapp{
 
-  display:inline-flex;
+display:inline-block;
 
-  align-items:center;
+padding:17px 32px;
 
-  justify-content:center;
+border-radius:13px;
 
-  gap:10px;
+background:linear-gradient(135deg,#f8da7a,#c38e20);
 
-  padding:16px 30px;
+color:#090909;
 
-  border-radius:12px;
+text-decoration:none;
 
-  background:linear-gradient(135deg,#f8d875,#c38d1f);
+font-weight:900;
 
-  color:#090909;
+box-shadow:0 12px 35px rgba(205,156,40,.12);
 
-  text-decoration:none;
-
-  font-weight:900;
-
-  box-shadow:0 10px 35px rgba(204,157,44,.12);
-
-  transition:.25s;
+transition:.25s;
 
 }
 
 .whatsapp:hover{
 
-  transform:translateY(-3px);
+transform:translateY(-3px);
 
 }
+
+/* Footer */
 
 footer{
 
-  text-align:center;
+text-align:center;
 
-  padding:40px 20px;
+padding:45px 20px;
 
-  border-top:1px solid #29200e;
+border-top:1px solid #29200d;
 
-  color:#777;
+color:#777;
 
-  line-height:1.8;
-
-}
-
-footer b{
-
-  color:#d7b252;
+line-height:1.8;
 
 }
+
+footer b{color:#d9b65b}
 
 @media(max-width:850px){
 
-  nav{padding:10px 4%}
+.links{display:none}
 
-  nav .links{display:none}
+.hero{
 
-  .hero{
+grid-template-columns:1fr;
 
-    grid-template-columns:1fr;
+text-align:center;
 
-    text-align:center;
+padding:65px 6%;
 
-    padding:65px 6%;
+}
 
-  }
+.hero p{
 
-  .hero p{margin-left:auto;margin-right:auto}
+margin-left:auto;
 
-  .actions{justify-content:center}
+margin-right:auto;
 
-  .art{height:300px}
+}
 
-  .grid{grid-template-columns:1fr 1fr}
+.actions{justify-content:center}
 
-  .match{grid-template-columns:1fr;text-align:center}
+.grid{grid-template-columns:1fr 1fr}
 
-  .team:first-child,.team:last-child{text-align:center}
+.match{
 
-  .odds{justify-content:center}
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.team:first-child,.team:last-child{text-align:center}
+
+.odds{justify-content:center}
 
 }
 
 @media(max-width:480px){
 
-  .logo{font-size:23px}
+.grid{grid-template-columns:1fr}
 
-  nav .btn{padding:11px 14px}
+.hero-card{height:290px}
 
-  h2{font-size:34px}
+.hero-seven{font-size:60px}
 
-  .grid{grid-template-columns:1fr}
+.offer,.vip{padding:35px 20px}
 
-  .offer,.vip{padding:35px 20px}
+.offer strong{font-size:34px}
 
-  .offer strong{font-size:32px}
+.game{padding:18px}
 
-  .sevens{font-size:62px}
+.playing-card{width:53px;height:76px}
+
+.slot{width:75px;height:90px;font-size:40px}
 
 }
 
@@ -744,287 +994,735 @@ footer b{
 
 <nav>
 
-  <div class="logo">
+<div class="logo">
 
-    CROWWM
+CROWWM
 
-    <span>777</span>
+<span>777</span>
 
-  </div>
+</div>
 
-  <div class="links">
+<div class="links">
 
-    <a href="#games">משחקים</a>
+<a href="#games">משחקים</a>
 
-    <a href="#sports">ספורט</a>
+<a href="#sports">ספורט</a>
 
-    <a href="#offers">מבצע</a>
+<a href="#offers">מבצע</a>
 
-    <a href="#vip">VIP</a>
+<a href="#vip">VIP</a>
 
-    <a href="#contact">צור קשר</a>
+<a href="#contact">צור קשר</a>
 
-  </div>
+</div>
 
-  <a class="btn gold" href="#contact">צור קשר</a>
+<a class="btn gold" href="#contact">צור קשר</a>
 
 </nav>
 
 <section class="hero">
 
-  <div>
+<div>
 
-    <div class="badge">PREMIUM DIGITAL EXPERIENCE</div>
+<div class="badge">CROWWM 777 • LUXURY EXPERIENCE</div>
 
-    <h1>
+<h1>
 
-      CROWWM
+CROWWM
 
-      <span>777</span>
+<span>777</span>
 
-    </h1>
+</h1>
 
-    <p>
+<p>
 
-      ברוכים הבאים ל־CROWWM 777 —
+ברוכים הבאים לחוויית CROWWM 777.
 
-      חוויית פרימיום בעיצוב יוקרתי, עם עולם משחקים,
+עיצוב פרימיום, משחקי דמו אינטראקטיביים,
 
-      אזור ספורט ומועדון VIP במקום אחד.
+אזור ספורט ומועדון VIP — הכול במקום אחד.
 
-    </p>
+</p>
 
-    <div class="actions">
+<div class="actions">
 
-      <a class="btn gold" href="#games">גלה את המשחקים 👑</a>
+<a class="btn gold" href="#games">כניסה לעולם המשחקים</a>
 
-      <a class="btn" href="#sports">צפה בספורט ⚽</a>
+<a class="btn" href="#sports">אזור הספורט ⚽</a>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
-  <div class="art">
+<div class="hero-card">
 
-    <div class="sevens">7 7 7</div>
+<div class="hero-seven">7 7 7</div>
 
-  </div>
+</div>
 
 </section>
 
 <section id="games">
 
-  <div class="section-label">Premium Games</div>
+<div class="label">LUXURY GAMES</div>
 
-  <h2>עולם המשחקים</h2>
+<h2>עולם המשחקים</h2>
 
-  <div class="grid">
+<div class="grid">
 
-    <div class="card">
+<div class="game-card" onclick="openGame('poker')">
 
-      <div class="icon">🃏</div>
+<div class="game-icon">🃏</div>
 
-      <h3>פוקר</h3>
+<h3>פוקר</h3>
 
-      <p>ממשק פוקר בעיצוב יוקרתי וחווייתי.</p>
+<p>משחק דמו מול יריב ממוחשב.</p>
 
-    </div>
+</div>
 
-    <div class="card">
+<div class="game-card" onclick="openGame('blackjack')">
 
-      <div class="icon">♠️</div>
+<div class="game-icon">♠️</div>
 
-      <h3>בלאק ג׳ק</h3>
+<h3>בלאק ג׳ק</h3>
 
-      <p>עיצוב קלאסי עם אווירת קזינו פרימיום.</p>
+<p>שחק מול הדילר הממוחשב.</p>
 
-    </div>
+</div>
 
-    <div class="card">
+<div class="game-card" onclick="openGame('roulette')">
 
-      <div class="icon">🎡</div>
+<div class="game-icon">🎡</div>
 
-      <h3>רולטה</h3>
+<h3>רולטה</h3>
 
-      <p>אזור רולטה ויזואלי בסגנון VIP.</p>
+<p>סובב את הגלגל וקבל תוצאה אקראית.</p>
 
-    </div>
+</div>
 
-    <div class="card">
+<div class="game-card" onclick="openGame('slots')">
 
-      <div class="icon">🎰</div>
+<div class="game-icon">🎰</div>
 
-      <h3>סלוטים</h3>
+<h3>סלוטים</h3>
 
-      <p>אזור משחקי דמו עם עיצוב מודרני.</p>
+<p>מכונת סלוטים אינטראקטיבית לדמו.</p>
 
-    </div>
+</div>
 
-  </div>
+</div>
+
+<!-- POKER -->
+
+<div id="poker" class="game">
+
+<div class="game-title">🃏 פוקר נגד המחשב</div>
+
+<div class="table">
+
+<div class="status" id="pokerStatus">
+
+לחץ על "משחק חדש" כדי להתחיל
+
+</div>
+
+<div class="cards" id="pokerBot"></div>
+
+<div class="cards" id="pokerCommunity"></div>
+
+<div class="cards" id="pokerPlayer"></div>
+
+<div class="demo-coins">
+
+🪙 מטבעות וירטואליים בלבד
+
+</div>
+
+</div>
+
+<div class="controls">
+
+<button class="btn gold" onclick="newPoker()">משחק חדש</button>
+
+<button class="btn" onclick="pokerAction('check')">Check</button>
+
+<button class="btn" onclick="pokerAction('call')">Call</button>
+
+<button class="btn" onclick="pokerAction('raise')">Raise</button>
+
+<button class="btn" onclick="pokerAction('fold')">Fold</button>
+
+</div>
+
+</div>
+
+<!-- BLACKJACK -->
+
+<div id="blackjack" class="game">
+
+<div class="game-title">♠️ בלאק ג׳ק נגד הדילר</div>
+
+<div class="bj-area">
+
+<div>הדילר</div>
+
+<div class="bj-hand" id="dealerCards"></div>
+
+<div class="score" id="dealerScore"></div>
+
+<hr>
+
+<div>השחקן</div>
+
+<div class="bj-hand" id="playerCards"></div>
+
+<div class="score" id="playerScore"></div>
+
+<div class="demo-coins">
+
+🪙 מטבעות וירטואליים בלבד
+
+</div>
+
+<div class="controls">
+
+<button class="btn gold" onclick="newBlackjack()">משחק חדש</button>
+
+<button class="btn" onclick="hit()">Hit</button>
+
+<button class="btn" onclick="stand()">Stand</button>
+
+</div>
+
+<div class="status" id="bjStatus"></div>
+
+</div>
+
+</div>
+
+<!-- ROULETTE -->
+
+<div id="roulette" class="game">
+
+<div class="game-title">🎡 רולטה</div>
+
+<div class="roulette-wheel" id="rouletteWheel">
+
+<div class="roulette-center" id="rouletteNumber">?</div>
+
+</div>
+
+<div class="controls">
+
+<button class="btn gold" onclick="spinRoulette()">סובב גלגל</button>
+
+</div>
+
+<div class="status" id="rouletteResult"></div>
+
+</div>
+
+<!-- SLOTS -->
+
+<div id="slots" class="game">
+
+<div class="game-title">🎰 סלוטים</div>
+
+<div class="slots">
+
+<div class="slot" id="slot1">7</div>
+
+<div class="slot" id="slot2">7</div>
+
+<div class="slot" id="slot3">7</div>
+
+</div>
+
+<div class="controls">
+
+<button class="btn gold" onclick="spinSlots()">סובב</button>
+
+</div>
+
+<div class="status" id="slotResult"></div>
+
+</div>
 
 </section>
 
 <section id="sports">
 
-  <div class="section-label">Sports Zone</div>
+<div class="label">SPORTS ZONE</div>
 
-  <h2>ספורט ויחסים</h2>
+<h2>ספורט ויחסים</h2>
 
-  <div class="sports">
+<div class="sports">
 
-    <div class="match">
+<div class="match">
 
-      <div class="team">ריאל מדריד</div>
+<div class="team">ריאל מדריד</div>
 
-      <div class="odds">
+<div class="odds">
 
-        <div class="odd">1.80</div>
+<div class="odd">1.80</div>
 
-        <div class="odd">3.40</div>
+<div class="odd">3.40</div>
 
-        <div class="odd">4.20</div>
+<div class="odd">4.20</div>
 
-      </div>
+</div>
 
-      <div class="team">ברצלונה</div>
+<div class="team">ברצלונה</div>
 
-    </div>
+</div>
 
-    <div class="match">
+<div class="match">
 
-      <div class="team">מנצ׳סטר סיטי</div>
+<div class="team">מנצ׳סטר סיטי</div>
 
-      <div class="odds">
+<div class="odds">
 
-        <div class="odd">1.65</div>
+<div class="odd">1.65</div>
 
-        <div class="odd">3.80</div>
+<div class="odd">3.80</div>
 
-        <div class="odd">5.10</div>
+<div class="odd">5.10</div>
 
-      </div>
+</div>
 
-      <div class="team">ליברפול</div>
+<div class="team">ליברפול</div>
 
-    </div>
+</div>
 
-    <div class="match">
+<div class="match">
 
-      <div class="team">פריז סן ז׳רמן</div>
+<div class="team">באיירן מינכן</div>
 
-      <div class="odds">
+<div class="odds">
 
-        <div class="odd">2.10</div>
+<div class="odd">2.10</div>
 
-        <div class="odd">3.30</div>
+<div class="odd">3.30</div>
 
-        <div class="odd">3.10</div>
+<div class="odd">3.10</div>
 
-      </div>
+</div>
 
-      <div class="team">באיירן מינכן</div>
+<div class="team">פריז סן ז׳רמן</div>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
-  <div class="demo">
+<div class="demo">
 
-    * היחסים המוצגים באתר הם להמחשה בלבד ואינם מאפשרים ביצוע הימור.
+היחסים המוצגים הם להמחשה בלבד ואינם מאפשרים ביצוע הימור.
 
-  </div>
+</div>
 
 </section>
 
 <section id="offers">
 
-  <div class="offer">
+<div class="offer">
 
-    <div class="section-label">Special Offer</div>
+<div class="label">SPECIAL OFFER</div>
 
-    <strong>🎁 בונוס 20% בהפקדה</strong>
+<h2>🎁 מבצע מיוחד</h2>
 
-    <p>
+<strong>20% בונוס</strong>
 
-      הפקדה של <b>400 ₪ ומעלה</b> — בונוס של <b>20%</b>.
+<p>
 
-      <br>
+הפקדה של <b>400 ₪ ומעלה</b> —
 
-      בכפוף לתקנון ולדין המקומי.
+20% בונוס.
 
-    </p>
+<br>
 
-    <a class="btn gold" href="#contact">לקבלת פרטים</a>
+בכפוף לתקנון ולדין המקומי.
 
-  </div>
+</p>
+
+<a class="btn gold" href="#contact">לקבלת פרטים</a>
+
+</div>
 
 </section>
 
 <section id="vip">
 
-  <div class="vip">
+<div class="vip">
 
-    <div class="section-label">VIP CLUB</div>
+<div class="label">VIP CLUB</div>
 
-    <h2>מועדון ה־VIP 👑</h2>
+<h2>מועדון ה־VIP 👑</h2>
 
-    <p>
+<p>
 
-      אזור פרימיום לחברים עם תוכן והטבות מיוחדות.
+אזור פרימיום עם תוכן והטבות מיוחדות.
 
-    </p>
+</p>
 
-    <a class="btn gold" href="#contact">צור קשר לגבי VIP</a>
+<a class="btn gold" href="#contact">צור קשר לגבי VIP</a>
 
-  </div>
+</div>
 
 </section>
 
 <section id="contact">
 
-  <div class="contact">
+<div class="contact">
 
-    <div class="section-label">Contact</div>
+<div class="label">CONTACT</div>
 
-    <h2>רוצה לדבר איתנו?</h2>
+<h2>רוצה לדבר איתנו?</h2>
 
-    <p style="color:#aaa;font-size:18px;margin-bottom:25px">
+<p style="color:#aaa;font-size:18px">
 
-      שלחו לנו הודעה ישירות ב־WhatsApp
+שלחו הודעה ישירות ב־WhatsApp
 
-    </p>
+</p>
 
-    <a
+<a
 
-      class="whatsapp"
+class="whatsapp"
 
-      href="https://wa.me/972524792601"
+href="https://wa.me/972524792601"
 
-      target="_blank"
+target="_blank"
 
-      rel="noopener"
+rel="noopener">
 
-    >
+💬 שלח הודעה ב־WhatsApp
 
-      💬 שלח הודעה ב־WhatsApp
+</a>
 
-    </a>
-
-  </div>
+</div>
 
 </section>
 
 <footer>
 
-  <b>CROWWM 777</b><br>
+<b>CROWWM 777</b><br>
 
-  חוויית פרימיום דיגיטלית<br><br>
+Luxury Digital Experience<br><br>
 
-  פרטיות · תקנון · משחק אחראי<br><br>
+פרטיות · תקנון · משחק אחראי<br><br>
 
-  18+ | יש לשחק באחריות ובהתאם לחוק המקומי.
+18+ | משחקי הדמו באתר משתמשים במטבעות וירטואליים בלבד.
 
 </footer>
+
+<script>
+
+/* GENERAL */
+
+function openGame(id){
+
+document.querySelectorAll('.game').forEach(g=>{
+
+g.classList.remove('active');
+
+});
+
+document.getElementById(id).classList.add('active');
+
+document.getElementById(id).scrollIntoView({
+
+behavior:'smooth',
+
+block:'center'
+
+});
+
+}
+
+/* DECK */
+
+const suits=['♠','♥','♦','♣'];
+
+const ranks=['2','3','4','5','6','7','8','9','10','J','Q','K','A'];
+
+function makeDeck(){
+
+let d=[];
+
+suits.forEach(s=>{
+
+ranks.forEach(r=>{
+
+d.push(r+s);
+
+});
+
+});
+
+return d.sort(()=>Math.random()-.5);
+
+}
+
+function cardHTML(card,hidden=false){
+
+return `<div class="playing-card ${hidden?'hidden-card':''}">
+
+${hidden?'🂠':card}
+
+</div>`;
+
+}
+
+/* POKER */
+
+let pokerDeck=[];
+
+function newPoker(){
+
+pokerDeck=makeDeck();
+
+let player=pokerDeck.splice(0,2);
+
+let bot=pokerDeck.splice(0,2);
+
+let community=pokerDeck.splice(0,5);
+
+document.getElementById('pokerPlayer').innerHTML=
+
+player.map(c=>cardHTML(c)).join('');
+
+document.getElementById('pokerBot').innerHTML=
+
+bot.map(c=>cardHTML(c,true)).join('');
+
+document.getElementById('pokerCommunity').innerHTML=
+
+community.map(c=>cardHTML(c,true)).join('');
+
+document.getElementById('pokerStatus').innerText=
+
+'קלפים חולקו — בחר פעולה';
+
+}
+
+function pokerAction(action){
+
+let messages={
+
+check:'Check — המחשב חושב...',
+
+call:'Call — השווית את הפעולה.',
+
+raise:'Raise — העלית את הפעולה.',
+
+fold:'Fold — קיפלת את היד.'
+
+};
+
+document.getElementById('pokerStatus').innerText=
+
+messages[action];
+
+}
+
+/* BLACKJACK */
+
+let bjDeck=[];
+
+let bjPlayer=[];
+
+let bjDealer=[];
+
+let bjOver=false;
+
+function cardValue(card){
+
+let r=card.slice(0,-1);
+
+if(['J','Q','K'].includes(r)) return 10;
+
+if(r==='A') return 11;
+
+return Number(r);
+
+}
+
+function handValue(hand){
+
+let total=hand.reduce((sum,c)=>sum+cardValue(c),0);
+
+let aces=hand.filter(c=>c.slice(0,-1)==='A').length;
+
+while(total>21 && aces>0){
+
+total-=10;
+
+aces--;
+
+}
+
+return total;
+
+}
+
+function renderBJ(){
+
+document.getElementById('playerCards').innerHTML=
+
+bjPlayer.map(c=>cardHTML(c)).join('');
+
+document.getElementById('dealerCards').innerHTML=
+
+bjDealer.map((c,i)=>cardHTML(c,i===1 && !bjOver)).join('');
+
+document.getElementById('playerScore').innerText=
+
+'ניקוד: '+handValue(bjPlayer);
+
+document.getElementById('dealerScore').innerText=
+
+bjOver?'ניקוד: '+handValue(bjDealer):'ניקוד: ?';
+
+}
+
+function newBlackjack(){
+
+bjDeck=makeDeck();
+
+bjPlayer=[bjDeck.pop(),bjDeck.pop()];
+
+bjDealer=[bjDeck.pop(),bjDeck.pop()];
+
+bjOver=false;
+
+document.getElementById('bjStatus').innerText=
+
+'התור שלך — Hit או Stand';
+
+renderBJ();
+
+}
+
+function hit(){
+
+if(bjOver)return;
+
+bjPlayer.push(bjDeck.pop());
+
+renderBJ();
+
+if(handValue(bjPlayer)>21){
+
+bjOver=true;
+
+document.getElementById('bjStatus').innerText=
+
+'נשרפת! הדילר מנצח.';
+
+renderBJ();
+
+}
+
+}
+
+function stand(){
+
+if(bjOver)return;
+
+while(handValue(bjDealer)<17){
+
+bjDealer.push(bjDeck.pop());
+
+}
+
+bjOver=true;
+
+let p=handValue(bjPlayer);
+
+let d=handValue(bjDealer);
+
+let result='';
+
+if(d>21 || p>d){
+
+result='ניצחת את הדילר! 🏆';
+
+}else if(p===d){
+
+result='תיקו 🤝';
+
+}else{
+
+result='הדילר ניצח.';
+
+}
+
+document.getElementById('bjStatus').innerText=result;
+
+renderBJ();
+
+}
+
+/* ROULETTE */
+
+function spinRoulette(){
+
+let wheel=document.getElementById('rouletteWheel');
+
+let number=Math.floor(Math.random()*37);
+
+wheel.style.transform=
+
+'rotate('+(1440+Math.floor(Math.random()*720))+'deg)';
+
+setTimeout(()=>{
+
+document.getElementById('rouletteNumber').innerText=number;
+
+document.getElementById('rouletteResult').innerText=
+
+'התוצאה: '+number+' • דמו בלבד';
+
+wheel.style.transform='rotate(0deg)';
+
+},2200);
+
+}
+
+/* SLOTS */
+
+function spinSlots(){
+
+let symbols=['7','🍒','⭐','💎','🔔','🍋'];
+
+let a=symbols[Math.floor(Math.random()*symbols.length)];
+
+let b=symbols[Math.floor(Math.random()*symbols.length)];
+
+let c=symbols[Math.floor(Math.random()*symbols.length)];
+
+document.getElementById('slot1').innerText=a;
+
+document.getElementById('slot2').innerText=b;
+
+document.getElementById('slot3').innerText=c;
+
+let result='נסו שוב!';
+
+if(a===b && b===c){
+
+result='🎉 שלישייה! תוצאה וירטואלית מיוחדת!';
+
+}else if(a===b || b===c || a===c){
+
+result='✨ זוג תואם!';
+
+}
+
+document.getElementById('slotResult').innerText=result;
+
+}
+
+</script>
 
 </body>
 
