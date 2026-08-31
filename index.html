@@ -16,49 +16,79 @@
 
 body{
 
-margin:0;background:#030303;color:white;
+margin:0;
 
-font-family:Arial,sans-serif;
+background:#030303;
+
+color:#fff;
+
+font-family:Arial,sans-serif
 
 }
 
 nav{
 
-padding:18px 6%;display:flex;
+position:sticky;
 
-justify-content:space-between;align-items:center;
+top:0;
+
+z-index:10;
+
+padding:16px 6%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
 
 background:#080808;
 
-border-bottom:1px solid #806020;
-
-position:sticky;top:0;z-index:10
+border-bottom:1px solid #806020
 
 }
 
 .logo{
 
-font:bold 28px Georgia;color:#f5d16d;
+font:bold 27px Georgia;
+
+color:#f5d16d;
 
 text-align:center
 
 }
 
-.logo span{display:block;color:white;font-size:15px;letter-spacing:8px}
+.logo span{
+
+display:block;
+
+font-size:15px;
+
+color:#fff;
+
+letter-spacing:8px
+
+}
 
 .balance{
 
-background:#151006;border:1px solid #806020;
+padding:10px 15px;
 
-padding:10px 15px;border-radius:12px;
+border:1px solid #806020;
 
-color:#f5d16d;font-weight:bold
+border-radius:12px;
+
+color:#f5d16d;
+
+font-weight:bold
 
 }
 
 .hero{
 
-padding:90px 7%;text-align:center;
+padding:85px 7%;
+
+text-align:center;
 
 background:radial-gradient(circle,#302108,#030303 65%)
 
@@ -66,7 +96,9 @@ background:radial-gradient(circle,#302108,#030303 65%)
 
 h1{
 
-font:900 75px Georgia;color:#f5d16d;
+font:900 75px Georgia;
+
+color:#f5d16d;
 
 margin:10px
 
@@ -74,45 +106,89 @@ margin:10px
 
 h1 span{
 
-display:block;color:white;font-size:40px;
+display:block;
+
+font-size:40px;
+
+color:#fff;
 
 letter-spacing:15px
 
 }
 
-p{color:#aaa;font-size:18px;line-height:1.7}
+h2{
 
-section{padding:60px 6%}
+color:#f5d16d;
+
+text-align:center
+
+}
+
+p{
+
+color:#aaa;
+
+font-size:18px;
+
+line-height:1.7
+
+}
+
+section{
+
+padding:60px 6%
+
+}
 
 .box{
 
-max-width:900px;margin:auto;
+max-width:900px;
 
-background:#0b0905;border:1px solid #594313;
+margin:auto;
 
-border-radius:22px;padding:25px
+padding:25px;
+
+border:1px solid #594313;
+
+border-radius:22px;
+
+background:#0b0905
 
 }
 
 input{
 
-width:100%;padding:14px;margin:7px 0;
+width:100%;
 
-background:#050505;border:1px solid #4d3912;
+padding:14px;
 
-border-radius:10px;color:white
+margin:7px 0;
+
+background:#050505;
+
+border:1px solid #4d3912;
+
+border-radius:10px;
+
+color:#fff
 
 }
 
 button{
 
-padding:13px 20px;border-radius:10px;
+padding:13px 20px;
+
+border-radius:10px;
 
 border:1px solid #9d7625;
 
-background:#090805;color:white;
+background:#090805;
 
-font-weight:bold;cursor:pointer
+color:#fff;
+
+font-weight:bold;
+
+cursor:pointer
 
 }
 
@@ -120,37 +196,67 @@ font-weight:bold;cursor:pointer
 
 background:linear-gradient(135deg,#fff0a8,#d3a136,#ffe58d);
 
-color:#080808;border:0
+color:#080808;
+
+border:0
 
 }
 
 .games{
 
-display:grid;grid-template-columns:repeat(3,1fr);
+max-width:900px;
 
-gap:15px;max-width:900px;margin:auto
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:15px
 
 }
 
-.game{
+.game-card{
 
-padding:30px;text-align:center;
+padding:25px 15px;
 
-border:1px solid #493711;border-radius:20px;
+text-align:center;
+
+border:1px solid #493711;
+
+border-radius:20px;
 
 background:#100d07
 
 }
 
-.icon{font-size:55px}
+.icon{
 
-.roulette{text-align:center}
+font-size:50px
+
+}
+
+.game{
+
+display:none
+
+}
+
+.game.active{
+
+display:block
+
+}
 
 .wheel{
 
-width:min(330px,80vw);height:min(330px,80vw);
+width:min(340px,80vw);
 
-margin:30px auto;border-radius:50%;
+height:min(340px,80vw);
+
+margin:30px auto;
+
+border-radius:50%;
 
 border:14px solid #cda43d;
 
@@ -230,7 +336,9 @@ background:conic-gradient(
 
 transition:transform 4s cubic-bezier(.12,.72,.08,1);
 
-display:grid;place-items:center;
+display:grid;
+
+place-items:center;
 
 box-shadow:0 0 50px #000
 
@@ -238,45 +346,151 @@ box-shadow:0 0 50px #000
 
 .center{
 
-width:85px;height:85px;border-radius:50%;
+width:85px;
 
-background:#050505;border:3px solid #d5aa45;
+height:85px;
 
-display:grid;place-items:center;
+border-radius:50%;
 
-color:#f5d16d;font-size:28px;font-weight:bold
+background:#050505;
+
+border:3px solid #d5aa45;
+
+display:grid;
+
+place-items:center;
+
+color:#f5d16d;
+
+font-size:28px;
+
+font-weight:bold
+
+}
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:8px;
+
+flex-wrap:wrap;
+
+margin:15px
+
+}
+
+.card{
+
+width:58px;
+
+height:82px;
+
+border-radius:10px;
+
+background:#f4f0e7;
+
+color:#111;
+
+display:grid;
+
+place-items:center;
+
+font:bold 22px Georgia;
+
+box-shadow:0 5px 14px #000
+
+}
+
+.hidden-card{
+
+background:linear-gradient(135deg,#701717,#170505);
+
+color:#f5d16d;
+
+border:1px solid #d2a53e
 
 }
 
 .controls{
 
-display:flex;justify-content:center;
+display:flex;
 
-gap:10px;flex-wrap:wrap
+justify-content:center;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin:15px
 
 }
 
 .result{
 
-margin:20px;color:#f5d16d;
+text-align:center;
 
-font-size:20px;font-weight:bold
+color:#f5d16d;
+
+font-size:20px;
+
+font-weight:bold;
+
+min-height:30px;
+
+margin:15px
+
+}
+
+.amounts{
+
+display:flex;
+
+justify-content:center;
+
+gap:8px;
+
+flex-wrap:wrap
 
 }
 
 footer{
 
-padding:40px;text-align:center;
+padding:40px;
 
-border-top:1px solid #30240d;color:#777
+text-align:center;
+
+border-top:1px solid #30240d;
+
+color:#777
 
 }
 
 @media(max-width:700px){
 
-.games{grid-template-columns:1fr}
+.games{
 
-h1{font-size:55px}
+grid-template-columns:1fr 1fr
+
+}
+
+h1{
+
+font-size:55px
+
+}
+
+}
+
+@media(max-width:450px){
+
+.games{
+
+grid-template-columns:1fr
+
+}
 
 }
 
@@ -306,7 +520,13 @@ CROWWM
 
 <section class="hero">
 
-<h1>CROWWM<span>777</span></h1>
+<h1>
+
+CROWWM
+
+<span>777</span>
+
+</h1>
 
 <p>
 
@@ -318,7 +538,9 @@ CROWWM
 
 </p>
 
-<button class="gold" onclick="document.getElementById('account').scrollIntoView()">
+<button class="gold"
+
+onclick="document.getElementById('account').scrollIntoView()">
 
 כניסה לאתר
 
@@ -332,17 +554,25 @@ CROWWM
 
 <h2>👤 כניסה / הרשמה</h2>
 
-<input id="name" placeholder="שם משתמש">
+<input id="name"
 
-<input id="pin" type="password" placeholder="קוד אישי">
+placeholder="שם משתמש">
 
-<button class="gold" onclick="login()">
+<input id="pin"
+
+type="password"
+
+placeholder="קוד אישי">
+
+<button class="gold"
+
+onclick="login()">
 
 כניסה
 
 </button>
 
-<p id="welcome"></p>
+<div id="welcome"></div>
 
 </div>
 
@@ -350,57 +580,63 @@ CROWWM
 
 <section>
 
-<h2 style="text-align:center;color:#f5d16d">
-
-🎮 עולם המשחקים
-
-</h2>
+<h2>🎮 עולם המשחקים</h2>
 
 <div class="games">
 
-<div class="game">
+<div class="game-card"
+
+onclick="openGame('roulette')">
 
 <div class="icon">🎡</div>
 
 <h3>רולטה</h3>
 
-<p>רולטה עם נקודות וירטואליות.</p>
+<p>רולטה עם נקודות וירטואליות</p>
 
-<button class="gold" onclick="document.getElementById('roulette').scrollIntoView()">
-
-שחק
-
-</button>
+<button class="gold">שחק</button>
 
 </div>
 
-<div class="game">
+<div class="game-card"
+
+onclick="openGame('blackjack')">
+
+<div class="icon">🃏</div>
+
+<h3>בלאק ג׳ק</h3>
+
+<p>שחק נגד דילר ממוחשב</p>
+
+<button class="gold">שחק</button>
+
+</div>
+
+<div class="game-card"
+
+onclick="openGame('slots')">
 
 <div class="icon">🎰</div>
 
 <h3>סלוטים</h3>
 
-<p>משחק סלוטים וירטואלי.</p>
+<p>מכונת סלוטים וירטואלית</p>
 
-<button onclick="alert('המשחק יתווסף בקרוב')">
-
-כניסה
-
-</button>
+<button class="gold">שחק</button>
 
 </div>
 
-<div class="game">
+<div class="game-card">
 
-<div class="icon">🃏</div>
+<div class="icon">♠️</div>
 
 <h3>פוקר</h3>
 
-<p>שולחן פוקר וירטואלי.</p>
+<p>שולחן פוקר וירטואלי</p>
 
 <button onclick="alert('המשחק יתווסף בקרוב')">
 
-כניסה
+בקרוב
 
 </button>
 
@@ -410,37 +646,39 @@ CROWWM
 
 </section>
 
-<section id="roulette">
+<!-- ROULETTE -->
 
-<div class="box roulette">
+<section id="roulette" class="game">
 
-<h2 style="color:#f5d16d">
+<div class="box">
 
-🎡 CROWWM ROULETTE
-
-</h2>
+<h2>🎡 CROWWM ROULETTE</h2>
 
 <div class="wheel" id="wheel">
 
-<div class="center" id="number">?</div>
+<div class="center" id="number">
+
+?
 
 </div>
 
-<div class="controls">
+</div>
 
-<button onclick="setBet(10)">10 נק׳</button>
+<div class="amounts">
 
-<button onclick="setBet(25)">25 נק׳</button>
+<button onclick="setBet(10)">10</button>
 
-<button onclick="setBet(50)">50 נק׳</button>
+<button onclick="setBet(25)">25</button>
 
-<button onclick="setBet(100)">100 נק׳</button>
+<button onclick="setBet(50)">50</button>
+
+<button onclick="setBet(100)">100</button>
 
 </div>
 
-<p>
+<p style="text-align:center">
 
-הימור נוכחי:
+הימור:
 
 <b id="bet">10</b> נקודות
 
@@ -448,7 +686,9 @@ CROWWM
 
 <div class="controls">
 
-<button class="gold" onclick="spin()">
+<button class="gold"
+
+onclick="spinRoulette()">
 
 🎡 סובב רולטה
 
@@ -456,9 +696,185 @@ CROWWM
 
 </div>
 
-<div class="result" id="result">
+<div class="result"
 
-בחר סכום וסובב.
+id="rouletteResult">
+
+בחר סכום וסובב
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BLACKJACK -->
+
+<section id="blackjack" class="game">
+
+<div class="box">
+
+<h2>♠️ CROWWM BLACKJACK</h2>
+
+<p style="text-align:center">
+
+שחק נגד דילר ממוחשב
+
+</p>
+
+<p style="text-align:center">
+
+הימור:
+
+<b id="bjBet">25</b> נקודות
+
+</p>
+
+<div class="amounts">
+
+<button onclick="setBJBet(10)">10</button>
+
+<button onclick="setBJBet(25)">25</button>
+
+<button onclick="setBJBet(50)">50</button>
+
+<button onclick="setBJBet(100)">100</button>
+
+</div>
+
+<h3 style="text-align:center">
+
+הדילר
+
+</h3>
+
+<div class="cards"
+
+id="dealerCards">
+
+</div>
+
+<div style="text-align:center"
+
+id="dealerScore">
+
+</div>
+
+<hr>
+
+<h3 style="text-align:center">
+
+השחקן
+
+</h3>
+
+<div class="cards"
+
+id="playerCards">
+
+</div>
+
+<div style="text-align:center"
+
+id="playerScore">
+
+</div>
+
+<div class="controls">
+
+<button class="gold"
+
+onclick="newBlackjack()">
+
+משחק חדש
+
+</button>
+
+<button id="hitBtn"
+
+onclick="hit()"
+
+disabled>
+
+Hit
+
+</button>
+
+<button id="standBtn"
+
+onclick="stand()"
+
+disabled>
+
+Stand
+
+</button>
+
+</div>
+
+<div class="result"
+
+id="bjResult">
+
+לחץ על משחק חדש
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SLOTS -->
+
+<section id="slots" class="game">
+
+<div class="box">
+
+<h2>🎰 CROWWM SLOTS</h2>
+
+<div class="cards">
+
+<div class="card"
+
+id="slot1">
+
+7
+
+</div>
+
+<div class="card"
+
+id="slot2">
+
+7
+
+</div>
+
+<div class="card"
+
+id="slot3">
+
+7
+
+</div>
+
+</div>
+
+<div class="controls">
+
+<button class="gold"
+
+onclick="spinSlots()">
+
+סובב
+
+</button>
+
+</div>
+
+<div class="result"
+
+id="slotResult">
 
 </div>
 
@@ -482,17 +898,23 @@ Luxury Virtual Games
 
 <script>
 
-let users=JSON.parse(
+let users=
+
+JSON.parse(
 
 localStorage.getItem("crowwmUsers")||"{}"
 
 );
 
-let current=localStorage.getItem("crowwmCurrent")||"";
+let current=
+
+localStorage.getItem("crowwmCurrent")||"";
 
 let bet=10;
 
 let spinning=false;
+
+/* ACCOUNT */
 
 function save(){
 
@@ -516,9 +938,13 @@ current
 
 function login(){
 
-let name=document.getElementById("name").value.trim();
+let name=
 
-let pin=document.getElementById("pin").value;
+document.getElementById("name").value.trim();
+
+let pin=
+
+document.getElementById("pin").value;
 
 if(!name||!pin){
 
@@ -552,35 +978,83 @@ current=name;
 
 save();
 
-update();
+updatePoints();
 
 document.getElementById("welcome").innerHTML=
 
-"שלום "+name+" 👑<br>יש לך "+
-
-users[name].points+" נקודות.";
+"<p>שלום "+name+" 👑</p>";
 
 }
 
-function update(){
+function updatePoints(){
 
-let p=current&&users[current]
+let p=
 
-?users[current].points:0;
+current&&users[current]
+
+?users[current].points
+
+:0;
 
 document.getElementById("points").innerText=p;
 
 }
 
+/* NAVIGATION */
+
+function openGame(id){
+
+document
+
+.querySelectorAll(".game")
+
+.forEach(x=>x.classList.remove("active"));
+
+document
+
+.getElementById(id)
+
+.classList.add("active");
+
+document
+
+.getElementById(id)
+
+.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+/* ROULETTE */
+
 function setBet(x){
 
 bet=x;
 
-document.getElementById("bet").innerText=x;
+document
+
+.getElementById("bet")
+
+.innerText=x;
 
 }
 
-function spin(){
+function red(n){
+
+return [
+
+1,3,5,7,9,12,14,16,18,
+
+19,21,23,25,27,30,32,34,36
+
+].includes(n);
+
+}
+
+function spinRoulette(){
 
 if(!current){
 
@@ -606,69 +1080,79 @@ users[current].points-=bet;
 
 save();
 
-update();
+updatePoints();
 
-let number=Math.floor(Math.random()*37);
+let number=
 
-let wheel=document.getElementById("wheel");
+Math.floor(Math.random()*37);
+
+let wheel=
+
+document.getElementById("wheel");
 
 wheel.style.transform=
 
 "rotate("+
 
-(1440+Math.floor(Math.random()*720))+
+(1440+
+
+Math.floor(Math.random()*720))+
 
 "deg)";
 
-document.getElementById("result").innerText=
+document
+
+.getElementById("rouletteResult")
+
+.innerText=
 
 "הכדור מסתובב...";
 
-setTimeout(function(){
+setTimeout(()=>{
 
-document.getElementById("number").innerText=number;
+document
 
-let red=[
+.getElementById("number")
 
-1,3,5,7,9,12,14,16,18,
+.innerText=number;
 
-19,21,23,25,27,30,32,34,36
+if(red(number)){
 
-];
+users[current].points+=bet*2;
 
-let won=false;
+document
 
-if(number!==0){
+.getElementById("rouletteResult")
 
-if(red.includes(number)){
+.innerText=
 
-won=true;
+"🎉 זכית! +"+
+
+(bet*2)+
+
+" נקודות";
 
 }
 
-}
+else{
 
-if(won){
+document
 
-let prize=bet*2;
+.getElementById("rouletteResult")
 
-users[current].points+=prize;
+.innerText=
 
-document.getElementById("result").innerText=
+"המספר הוא "+
 
-"🎉 זכית! +"+prize+" נקודות";
+number+
 
-}else{
-
-document.getElementById("result").innerText=
-
-"המספר הוא "+number+" — נסה שוב";
+" — נסה שוב";
 
 }
 
 save();
 
-update();
+updatePoints();
 
 spinning=false;
 
@@ -676,7 +1160,449 @@ spinning=false;
 
 }
 
-update();
+/* BLACKJACK */
+
+let bjDeck=[];
+
+let player=[];
+
+let dealer=[];
+
+let bjBet=25;
+
+let bjOver=true;
+
+function setBJBet(x){
+
+bjBet=x;
+
+document
+
+.getElementById("bjBet")
+
+.innerText=x;
+
+}
+
+function createDeck(){
+
+let suits=["♠","♥","♦","♣"];
+
+let ranks=[
+
+"2","3","4","5","6","7",
+
+"8","9","10","J","Q","K","A"
+
+];
+
+let deck=[];
+
+suits.forEach(s=>{
+
+ranks.forEach(r=>{
+
+deck.push(r+s);
+
+});
+
+});
+
+return deck.sort(
+
+()=>Math.random()-.5
+
+);
+
+}
+
+function value(card){
+
+let r=card.slice(0,-1);
+
+if(["J","Q","K"].includes(r))
+
+return 10;
+
+if(r==="A")
+
+return 11;
+
+return Number(r);
+
+}
+
+function total(hand){
+
+let t=
+
+hand.reduce(
+
+(a,c)=>a+value(c),0
+
+);
+
+let aces=
+
+hand.filter(
+
+c=>c.slice(0,-1)==="A"
+
+).length;
+
+while(t>21&&aces){
+
+t-=10;
+
+aces--;
+
+}
+
+return t;
+
+}
+
+function cardHTML(card,hidden=false){
+
+return `
+
+<div class="card ${hidden?"hidden-card":""}">
+
+${hidden?"🂠":card}
+
+</div>
+
+`;
+
+}
+
+function renderBlackjack(){
+
+document
+
+.getElementById("playerCards")
+
+.innerHTML=
+
+player
+
+.map(c=>cardHTML(c))
+
+.join("");
+
+document
+
+.getElementById("dealerCards")
+
+.innerHTML=
+
+dealer
+
+.map((c,i)=>
+
+cardHTML(c,i===1&&!bjOver))
+
+.join("");
+
+document
+
+.getElementById("playerScore")
+
+.innerText=
+
+"ניקוד: "+
+
+total(player);
+
+document
+
+.getElementById("dealerScore")
+
+.innerText=
+
+bjOver
+
+?"ניקוד: "+total(dealer)
+
+:"ניקוד: ?";
+
+}
+
+function newBlackjack(){
+
+if(!current){
+
+alert("קודם צריך להיכנס לחשבון");
+
+return;
+
+}
+
+if(users[current].points<bjBet){
+
+alert("אין מספיק נקודות");
+
+return;
+
+}
+
+users[current].points-=bjBet;
+
+save();
+
+updatePoints();
+
+bjDeck=createDeck();
+
+player=[
+
+bjDeck.pop(),
+
+bjDeck.pop()
+
+];
+
+dealer=[
+
+bjDeck.pop(),
+
+bjDeck.pop()
+
+];
+
+bjOver=false;
+
+document
+
+.getElementById("hitBtn")
+
+.disabled=false;
+
+document
+
+.getElementById("standBtn")
+
+.disabled=false;
+
+document
+
+.getElementById("bjResult")
+
+.innerText=
+
+"התור שלך — Hit או Stand";
+
+renderBlackjack();
+
+if(total(player)===21){
+
+stand();
+
+}
+
+}
+
+function hit(){
+
+if(bjOver)return;
+
+player.push(bjDeck.pop());
+
+renderBlackjack();
+
+if(total(player)>21){
+
+finish("💥 נשרפת! הדילר מנצח.");
+
+}
+
+}
+
+function stand(){
+
+if(bjOver)return;
+
+while(total(dealer)<17){
+
+dealer.push(bjDeck.pop());
+
+}
+
+let p=total(player);
+
+let d=total(dealer);
+
+bjOver=true;
+
+if(d>21){
+
+users[current].points+=bjBet*2;
+
+finish("🎉 הדילר נשרף! זכית!");
+
+}
+
+else if(p>d){
+
+users[current].points+=bjBet*2;
+
+finish("🏆 ניצחת את הדילר!");
+
+}
+
+else if(p===d){
+
+users[current].points+=bjBet;
+
+finish("🤝 תיקו — ההימור חוזר.");
+
+}
+
+else{
+
+finish("הדילר ניצח.");
+
+}
+
+}
+
+function finish(message){
+
+save();
+
+updatePoints();
+
+renderBlackjack();
+
+document
+
+.getElementById("bjResult")
+
+.innerText=message;
+
+document
+
+.getElementById("hitBtn")
+
+.disabled=true;
+
+document
+
+.getElementById("standBtn")
+
+.disabled=true;
+
+}
+
+/* SLOTS */
+
+function spinSlots(){
+
+if(!current){
+
+alert("קודם צריך להיכנס לחשבון");
+
+return;
+
+}
+
+let cost=10;
+
+if(users[current].points<cost){
+
+alert("אין מספיק נקודות");
+
+return;
+
+}
+
+users[current].points-=cost;
+
+let symbols=[
+
+"7","🍒","⭐","💎","🔔","🍋"
+
+];
+
+let a=
+
+symbols[Math.floor(Math.random()*symbols.length)];
+
+let b=
+
+symbols[Math.floor(Math.random()*symbols.length)];
+
+let c=
+
+symbols[Math.floor(Math.random()*symbols.length)];
+
+document
+
+.getElementById("slot1")
+
+.innerText=a;
+
+document
+
+.getElementById("slot2")
+
+.innerText=b;
+
+document
+
+.getElementById("slot3")
+
+.innerText=c;
+
+if(a===b&&b===c){
+
+users[current].points+=100;
+
+document
+
+.getElementById("slotResult")
+
+.innerText=
+
+"🎉 שלישייה! +100 נקודות";
+
+}
+
+else if(a===b||b===c||a===c){
+
+users[current].points+=20;
+
+document
+
+.getElementById("slotResult")
+
+.innerText=
+
+"✨ זוג תואם! +20 נקודות";
+
+}
+
+else{
+
+document
+
+.getElementById("slotResult")
+
+.innerText=
+
+"נסו שוב!";
+
+}
+
+save();
+
+updatePoints();
+
+}
+
+/* START */
+
+updatePoints();
 
 </script>
 
